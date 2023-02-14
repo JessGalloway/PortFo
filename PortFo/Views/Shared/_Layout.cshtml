@@ -1,0 +1,151 @@
+﻿
+@{
+}
+
+<!DOCTYPE html>
+<!--[if lt IE 8]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8" />
+    <title>Jesse Galloway</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="~/css/default.css" />
+    <link rel="stylesheet" href="~/css/layout.css" />
+    <link rel="stylesheet" href="~/css/media-queries.css" />
+    <link rel="stylesheet" href="~/css/custom.css" />
+
+    <!-- Script
+    ================================================== -->
+    <script src="~/js/modernizr.js"></script>
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="~/favicon.ico" />
+</head>
+
+<body>
+    <!-- Header
+    ================================================== -->
+    <header>
+        <div class="row">
+            <div class="twelve columns">
+                <div class="logo">
+                    <a asp-action="Index" asp-controller="Home"><img alt="" src="~/images/jesse-g-low-resolution-logo-black-on-white-background.png" id="logoJ" /></a>
+                </div>
+                
+                <nav id="nav-wrap">
+                   @*nav-wrap was in this href?*@
+                    <a class="mobile-btn" href="~/" title="Show navigation">Show navigation</a>
+                    <a class="mobile-btn" href="~/#" title="Hide navigation">Hide navigation</a>
+
+                    <ul id="nav" class="nav">
+                        <li class="current"><a asp-action="Index" asp-controller="Home">Home</a></li>
+
+                        <li>
+                            <span><a asp-action="Portfolio" asp-controller="Home" )>Portfolio</a></span>
+                            <ul>
+                                <li><a asp-action="PortfolioIndex" asp-controller="Home">Porfolio Index</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li><a asp-action="About" asp-controller="Home">About</a></li>
+                        <li><a asp-action="Contact" asp-controller="Home">Contact</a></li>
+                        <li><a asp-action="Styles" asp-controller="Home">Resume</a></li>
+                    </ul>
+                    <!-- end #nav -->
+                </nav>
+                <!-- end #nav-wrap -->
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+      
+
+      @RenderBody();
+
+    
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="twelve columns">
+                <ul class="footer-nav">
+                    <li><a asp-action="Index" asp-controller="Home">Home.</a></li>
+
+                    <li><a asp-action="Portfolio" asp-controller="Home">Portfolio.</a></li>
+                    <li><a asp-action="About" asp-controller="Home">About.</a></li>
+                    <li><a asp-action="Contact" asp-controller="Home">Contact.</a></li>
+                </ul>
+
+                <ul class="footer-social">
+                    <li>
+                        <a href="~/#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="~/#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="~/#"><i class="fa fa-google-plus"></i></a>
+                    </li>
+                    
+
+                    <li>
+                        <a href="~/#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="~/#"><i class="fa fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="~/#"><i class="fa fa-rss"></i></a>
+                    </li>
+                </ul>
+
+                <ul class="copyright">
+                    <li>Copyright &copy; 2014 Sparrow</li>
+                    <li>
+                        Design by
+                        <a href="~/http://www.styleshout.com/" target="_blank">Styleshout</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="go-top" style="display: block">
+                <a title="Back to Top" href="~/#">Go To Top</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End-->
+    @section scripts {
+
+        <!-- Java Script
+        ================================================== -->
+        <script src="~/http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            window.jQuery ||
+                document.write('<script src="~/js/jquery-1.10.2.min.js"><\/script>');
+        </script>
+        <script type="text/javascript"
+            src="~/js/jquery-migrate-1.2.1.min.js"></script>
+
+        <script src="~/js/jquery.flexslider.js"></script>
+        <script src="~/js/doubletaptogo.js"></script>
+        <script src="~/js/init.js"></script>
+        <script src="~/js/main.js"></script>
+    }
+    @RenderSection("scripts", required:false) 
+</body>
+</html>

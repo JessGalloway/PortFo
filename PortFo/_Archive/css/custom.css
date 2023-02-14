@@ -1,0 +1,145 @@
+.sliderBG {
+
+  max-width: 100%;
+  height: auto;
+  z-index: -100;
+  
+  
+
+}
+
+.techSkills{
+
+  font: 26px/38px notosans-bold, sans-serif !important;
+  color: #11ABB0;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-weight: bolder;
+
+
+}
+
+.textM {
+
+  /* margin: 0, 0, 0, 0 !important; */
+  padding-top: 0;
+  font-size: 1em;
+  color: #11ABB0;
+
+}
+
+#intro {
+  height: 50vh;
+  background-image: url(/images/trees.jpg);
+ 
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+
+
+}
+
+#slides {
+
+  height: auto;
+
+}
+
+/* About css */
+
+#page-title {
+
+  height: 50vh;
+  background-image: url(/images/trees.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+#nick 
+{
+
+  height: 20em;
+  width: 17em;
+  border-radius: 2%;
+
+
+
+}
+
+#logoJ {
+
+  height: 4em;
+  width: 6em;
+  border-radius: 10%;
+  margin-top: -2em;
+
+}
+
+
+.side-list {
+
+  /* show the list side by side */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: bold;
+
+}
+
+.tite 
+{
+  /* bold and increase size */
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.training-info
+{
+  /* force spans to stay on one line */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.program
+{
+  /* bold and increase size */
+  
+  font-weight: bold;
+  font-size: 1em;
+  margin-right: 20em;
+  justify-content: flex-start;
+}
+
+.grad-date{
+
+  /* align to right */
+  overflow: hidden;
+}
+
+
+.tites
+{
+  line-height: 1.5em;
+}
+
+.work {
+
+  line-height: 1.5em;
+
+}
+
+.work-date{
+  
+    /* align to right */
+    overflow: hidden;
+    margin-left: 300px;
+}

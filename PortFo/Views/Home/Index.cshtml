@@ -1,0 +1,201 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<!-- Intro Section
+================================================== -->
+
+<section id="intro">
+
+    <!-- Flexslider Start-->
+    <div id="intro-slider" class="flexslider">
+@*        <ul class="slides" id="slides">
+            <!-- Slide -->
+            <li>
+                <div class="row">
+                    <div class="twelve columns">
+                        <div class="slider-text align-center">
+                            <h1>Jesse Galloway<span>.</span></h1>
+                            <p></p>
+                        </div>
+                        <div class="slider-image">
+                            <img src="" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Slide -->
+            <li>
+                <div class="row">
+                    <div class="twelve columns">
+                        <div class="slider-text">
+                            <h1>Projects Coming Soon<span>.</span></h1>
+                            <p></p>
+                        </div>
+                        <div class="slider-image"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>*@
+        <div id="page-title">
+            <div class="row">
+                <div class="ten columns centered text-center">
+                    <h1>Jesse Galloway<span>.</span></h1>
+
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flexslider End-->
+</section>
+<!-- Intro Section End-->
+<!-- Info Section
+================================================== -->
+<section id="info">
+    <div class="row text-center">
+        <div>
+            <p class="techSkills">Technical and Professional Skills</p>
+            <hr class="proTech" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="bgrid-quarters s-bgrid-halves">
+            <div class="columns text-center">
+                <h2 class="text-center">Front End.</h2>
+                <hr class="rowHr" />
+                <p>
+                    HTML5, JavaScript, jQuery/jQueryUI, CSS3, Clean and Responsive,
+                    Mobile First Web Development, Bootstrap, ReactJS
+                </p>
+            </div>
+
+            <div class="columns text-center">
+                <h2>Middle And Back End</h2>
+                <hr class="rowHR" />
+                <h4 class="textM position-absolute top-0 star">Middle</h4>
+                <p class="para1">C#, .NET Core MVC, LINQ, EF, Razor Pages</p>
+                <h4 class="textM">Back End</h4>
+                <p class="para1">ADO.Net, SQL, SQL Server</p>
+            </div>
+
+            <div class="columns s-first text-center">
+                <h2>Tools.</h2>
+                <hr class="p-1" />
+                <p>
+                    Azure Data Studio, Visual Studio, Visual Studio Code, SSMS, Git
+                    Bash, Version Control
+                </p>
+            </div>
+
+            <div class="columns text-center">
+                <h2>Technical Skills and Training.</h2>
+                <hr class="rowHR" />
+
+                <p>
+                    .Net Core MVC Framework, Troubleshooting & Debugging, Source
+                    Control, Agile/Scrum, Website Deployment, Pair Programming, Code
+                    Review
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Info Section End-->
+<!-- Works Section
+================================================== -->
+<section id="works">
+    <div class="row">
+        <div class="twelve columns align-center">
+            <h1>Projects Preview.</h1>
+        </div>
+
+        <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-halves">
+              <div class="columns portfolio-item">
+                <div class="item-wrap">
+                    <a asp-action="Portfolio" asp-controller="Home">
+                        <img alt="" src="~/images/portfolio/console.jpg" />
+                        <div class="overlay"></div>
+                        <div class="link-icon"><i class="fa fa-link"></i></div>
+                    </a>
+                    <div class="portfolio-item-meta">
+                        <h5><a asp-action="Portfolio" asp-controller="Home">Portfolio-item</a></h5>
+                        <p>descriptive word</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns portfolio-item">
+                <div class="item-wrap">
+                    <a asp-action="Portfolio" asp-controller="Home">
+                        <img alt="" src="~/images/portfolio/console.jpg" />
+                        <div class="overlay"></div>
+                        <div class="link-icon"><i class="fa fa-link"></i></div>
+                    </a>
+                    <div class="portfolio-item-meta">
+                        <h5><a asp-action="Portfolio" asp-controller="Home">Portfolio-item</a></h5>
+                        <p>descriptive word</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns portfolio-item s-first">
+                <div class="item-wrap">
+                    <a href="portfolio.html">
+                        <img alt="" src="~/images/portfolio/camera-man.jpg" />
+                        <div class="overlay"></div>
+                        <div class="link-icon"><i class="fa fa-link"></i></div>
+                    </a>
+                    <div class="portfolio-item-meta">
+                        <h5><a asp-action="Portfolio" asp-controller="Home">Portfolio-item</a></h5>
+                        <p>descriptive word</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns portfolio-item">
+                <div class="item-wrap">
+                    <a asp-action="Portfolio" asp-controller="Home">
+                        <img alt="" src="~/images/portfolio/into-the-light.jpg" />
+                        <div class="overlay"></div>
+                        <div class="link-icon"><i class="fa fa-link"></i></div>
+                    </a>
+                    <div class="portfolio-item-meta">
+                        <h5><a asp-action="Portfolio" asp-controller="Home">Portfolio-item</a></h5>
+                        <p>descriptive word</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Works Section End-->
+<!-- Call-To-Action Section
+================================================== -->
+<section id="call-to-action">
+    <div class="row">
+        <div class="col-12 col-md-8 col sm-6 text-center">
+            <h1>Quotes of the day.</h1>
+
+            <div id="quote"></div>
+            <p>Created using an API.</p>
+        </div>
+    </div>
+</section>
+<!-- Call-To-Action Section End-->
+<!-- Tweets Section
+================================================== -->
+<section id="tweets">
+    <div class="row">
+        <div class="tweeter-icon align-center">
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+        <p class="align-center"><a href="~/#" class="button">Linked In</a></p>
+    </div>
+</section>
+<!-- Tweet Section End-->

@@ -1,0 +1,159 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Portfolio-Index";
+}
+
+<!-- Page Title
+================================================== -->
+<div id="page-title">
+    <div class="row">
+        <div class="ten columns centered text-center">
+            <h1>Our Amazing Works<span>.</span></h1>
+
+            <p></p>
+        </div>
+    </div>
+</div>
+<!-- Page Title End-->
+<!-- Content
+================================================== -->
+<div class="content-outer">
+    <div id="page-content" class="row portfolio">
+        <section class="entry cf">
+            <div id="secondary" class="four columns entry-details text-center">
+                <h1>Portfolio.</h1>
+
+                <p class="lead">Project information coming soon.</p>
+
+                <p>Coming soon</p>
+            </div>
+            <!-- Secondary End-->
+
+            <div id="primary" class="eight columns portfolio-list">
+                <div id="portfolio-wrapper" class="bgrid-halves cf">
+                    <div class="columns portfolio-item first">
+                        <div class="item-wrap">
+                            <a @Url.Action("Portfolio", "Home")>
+                                <img alt="" src="~/images/portfolio/geometrics.jpg" />
+                                <div class="overlay"></div>
+                                <div class="link-icon"><i class="fa fa-link"></i></div>
+                            </a>
+                            <div class="portfolio-item-meta">
+                                <h5><a @Url.Action("Portfolio", "Home")>Geometrics</a></h5>
+                                <p>Illustrration</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columns portfolio-item">
+                        <div class="item-wrap">
+                            <a @Url.Action("Portfolio", "Home")>
+                                <img alt="" src="~/images/portfolio/console.jpg" />
+                                <div class="overlay"></div>
+                                <div class="link-icon"><i class="fa fa-link"></i></div>
+                            </a>
+                            <div class="portfolio-item-meta">
+                                <h5><a @Url.Action("Portfolio", "Home")>Console</a></h5>
+                                <p>Web Development</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columns portfolio-item first">
+                        <div class="item-wrap">
+                            <a @Url.Action("Portfolio", "Home")>
+                                <img alt="" src="~/images/portfolio/camera-man.jpg" />
+                                <div class="overlay"></div>
+                                <div class="link-icon"><i class="fa fa-link"></i></div>
+                            </a>
+                            <div class="portfolio-item-meta">
+                                <h5><a @Url.Action("Portfolio", "Home")>Camera Man</a></h5>
+                                <p>Photography</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columns portfolio-item">
+                        <div class="item-wrap">
+                            <a @Url.Action("Portfolio", "Home")>
+                                <img alt="" src="~/images/portfolio/into-the-light.jpg" />
+                                <div class="overlay"></div>
+                                <div class="link-icon"><i class="fa fa-link"></i></div>
+                            </a>
+                            <div class="portfolio-item-meta">
+                                <h5><a @Url.Action("Portfolio", "Home")>Into The Light</a></h5>
+                                <p>Photography</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columns portfolio-item first">
+                        <div class="item-wrap">
+                            <a @Url.Action("Portfolio", "Home")>
+                                <img alt="" src="~/images/portfolio/farmerboy.jpg" />
+                                <div class="overlay"></div>
+                                <div class="link-icon"><i class="fa fa-link"></i></div>
+                            </a>
+                            <div class="portfolio-item-meta">
+                                <h5><a @Url.Action("Portfolio", "Home")>Farmer Boy</a></h5>
+                                <p>Branding</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columns portfolio-item">
+                        <div class="item-wrap">
+                            <a @Url.Action("Portfolio", "Home")>
+                                <img alt="" src="~/images/portfolio/coffee-cup.jpg" />
+                                <div class="overlay"></div>
+                                <div class="link-icon"><i class="fa fa-link"></i></div>
+                            </a>
+                            <div class="portfolio-item-meta">
+                                <h5><a @Url.Action("Portfolio", "Home")>Coffee Cup</a></h5>
+                                <p>Web Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- primary end-->
+        </section>
+        <!-- end section -->
+    </div>
+    <!-- #page-content end-->
+</div>
+<!-- content End-->
+<!-- Tweets Section
+================================================== -->
+<section id="tweets">
+    <div class="row">
+        <div class="tweeter-icon align-center">
+            <i class="fa fa-github"></i>
+        </div>
+
+        <ul id="twitter" class="align-center">
+            <li>
+                <span>
+                    All projects availabe via github.
+                    <a href="~/#">github.com</a>
+                </span>
+                <b><a href="~/#"></a></b>
+            </li>
+            <!--
+              <li>
+                 <span>
+                 This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                 Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
+                 <a href="~/#">http://t.co/CGIrdxIlI3</a>
+                 </span>
+                 <b><a href="~/#">3 Days Ago</a></b>
+              </li>
+              -->
+        </ul>
+
+        <p class="align-center"><a href="~/#" class="button">Check it out</a></p>
+    </div>
+</section>
+<!-- Tweet Section End-->
