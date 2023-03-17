@@ -1,6 +1,6 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿
+@model PortFo.Models.ContactViewModel
+
 @{
     ViewData["Title"] = "Contact";
 }
@@ -24,6 +24,18 @@
     <div id="page-content" class="row page">
         <div id="primary" class="eight columns">
             <section>
+                
+                @if (ViewBag.ErrorMessage != null)
+                {
+                    <div class="row">
+                        <p style="color: red; font-style: italic;">
+                            @Html.Raw(ViewBag.ErrorMessage)
+                        </p>
+                    </div>
+                }
+
+
+
                 <h1>Hello. Let's talk.</h1>
 
                 <p class="lead">
@@ -36,58 +48,51 @@
 
                 <div id="contact-form">
                     <!-- form -->
-                    <form name="contactForm" id="contactForm" method="post" action="">
+                    <form  asp-action="Contact" class="php-email-form" name="contactForm" id="contactForm">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         <fieldset>
                             <div class="half">
-                                <label for="contactName">Name <span class="required">*</span></label>
-                                <input name="contactName"
-                                       type="text"
-                                       id="contactName"
-                                       size="35"
-                                       value="" />
+                                <label for="contactName"></label>
+                                <input asp-for="Name" class="form-control" placeholder="Name" id="name" />
+                                <span asp-validation-for="Name" class="text-danger"></span>
                             </div>
 
                             <div class="half pull-right">
-                                <label for="contactEmail">Email <span class="required">*</span></label>
-                                <input name="contactEmail"
-                                       type="text"
-                                       id="contactEmail"
-                                       size="35"
-                                       value="" />
+                                <label for="contactEmail"></label>
+                                <input asp-for="Email" class="form-control" id="email" placeholder="Email" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
                             </div>
 
                             <div>
-                                <label for="contactSubject">Subject</label>
-                                <input name="contactSubject"
-                                       type="text"
-                                       id="contactSubject"
-                                       size="35"
-                                       value="" />
+                                <label for="contactSubject"></label>
+                                <input asp-for="Subject" class="form-control" id="subject" placeholder="Subject" />
+                                <span asp-validation-for="Subject" class="text-danger"></span>
                             </div>
 
                             <div>
-                                <label for="contactMessage">Message <span class="required">*</span></label>
-                                <textarea name="contactMessage"
-                                          id="contactMessage"
-                                          rows="15"
-                                          cols="50"></textarea>
+                                <label for="contactMessage"></label>
+                                <textarea asp-for="Subject" class="form-control" rows="15" name="contactMessage" id="contactMessage" placeholder="message"></textarea>       
+                                <span asp-validation-for="Message" class="text-danger"></span>
                             </div>
 
                             <div>
-                                <button class="submit">Submit</button>
-                                <span id="image-loader">
-                                    <img src="images/loader.gif" alt="" />
-                                </span>
+                                
+                                <button class="submit" type="submit"> Send Message</button>
+                                @*<span id="image-loader">
+                                    <img src="~/images/loader.gif" alt="" />
+                                </span>*@
                             </div>
                         </fieldset>
                     </form>
                     <!-- Form End -->
                     <!-- contact-warning -->
+                     @*
                     <div id="message-warning"></div>
                     <!-- contact-success -->
                     <div id="message-success">
-                        <i class="icon-ok"></i>Your message was sent, thank you!<br />
+                    <i class="icon-ok"></i>Your message was sent, thank you!<br />
                     </div>
+                    *@                  
                 </div>
             </section>
             <!-- section end -->
@@ -122,7 +127,7 @@
                         Github: <a href="~/#">Jesse Galloway</a><br />
                     </p>
                 </div>
-
+@*
                 <div class="widget widget_photostream">
                     <h5>Photostream</h5>
                     <ul class="photostream cf">
@@ -151,7 +156,7 @@
                             <a href="~/#"><img src="~/images/thumb.jpg" alt="thumbnail" /></a>
                         </li>
                     </ul>
-                </div>
+                </div>*@
             </aside>
         </div>
     </div>
@@ -168,11 +173,11 @@
         <ul id="twitter" class="align-center">
             <li>
                 <span>
-                    Feel free to check out my Linked in profile. I am currently
+                    Feel free to check out my Linked in profile or GitHub Repo. I am currently
                     looking for a full time position in the web development field.
-                    <a href="~/#">http://t.co/CGIrdxIlI3</a>
+                    
                 </span>
-                <b><a href="~/#"></a></b>
+                <b><a href="https://www.linkedin.com/in/jesse-galloway-02b082261/"></a></b>
             </li>
             <!--
               <li>
@@ -185,8 +190,8 @@
               </li>
               -->
         </ul>
-
-        <p class="align-center"><a href="~/#" class="button">Linked in</a></p>
+       
+        <p class="align-center"><a href="https://www.linkedin.com/in/jesse-galloway-02b082261/" class="button">Linked in</a></p>
     </div>
 </section>
 <!-- Tweet Section End-->
