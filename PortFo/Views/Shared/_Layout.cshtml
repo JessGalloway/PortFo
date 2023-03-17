@@ -55,13 +55,14 @@
                     <ul id="nav" class="nav">
                         <li class="current"><a asp-action="Index" asp-controller="Home">Home</a></li>
 
-                        <li>
-                            <span><a asp-action="Portfolio" asp-controller="Home">Portfolio</a></span>
+                        @*<li>
+                            <span><a asp-action="PortfolioIndex" asp-controller="Home">Projects</a></span>
                             <ul>
-                                <li><a asp-action="PortfolioIndex" asp-controller="Home">Porfolio Index</a></li>
                                 
+                                <li><a asp-action="Portfolio" asp-controller="Home">Single Project</a></li>
                             </ul>
-                        </li>
+                        </li>*@
+                        <li><a asp-action="PortfolioIndex" asp-controller="Home">Projects</a></li>
                         <li><a asp-action="About" asp-controller="Home">About</a></li>
                         <li><a asp-action="Contact" asp-controller="Home">Contact</a></li>
                         <li><a asp-action="Styles" asp-controller="Home">Resume</a></li>

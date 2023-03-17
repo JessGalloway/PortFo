@@ -1,9 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MimeKit;
+using MailKit.Net.Smtp;
 
 namespace PortFo.Controllers
 {
     public class Home : Controller
     {
+        private readonly IConfiguration _config;
+
+        public Home(IConfiguration config) { _config = config; }
+
+
         public IActionResult Index()
         {
             return View();

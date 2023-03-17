@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PortFo.Data;
+using NETCore.MailKit;
+using MailKit.Net.Smtp;
+using MimeKit;
 
 namespace PortFo
 {
